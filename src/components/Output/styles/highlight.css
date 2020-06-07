@@ -1,0 +1,88 @@
+.container, .backdrop, textarea {
+  width: 80%;
+  height: 400px;
+}
+
+.highlights, textarea {
+  padding: 10px;
+  font: 20px/28px 'Open Sans', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+}
+
+.backdrop {
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.highlights {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: left;
+    color: transparent;
+}
+
+textarea {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  border-radius: 0;
+  color: #444;
+  background-color: transparent;
+  overflow: auto;
+  resize: none;
+}
+
+mark {
+  border-radius: 3px;
+  color: transparent;
+}
+
+.even {
+  background-color: #ffae00;
+}
+
+._odd {
+  background-color: #ffdc89;
+}
+
+.container .header {
+  display: flex;
+}
+
+.container .header h4 {
+  width: 20%;
+  text-align: left;
+}
+
+.container .header p {
+  width: 80%;
+  text-align: right;
+  color: rgb(253, 136, 57);
+  font-weight: 600;
+  padding: 3px;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(80, 255, 203);
+  border: 1px solid rgb(0, 183, 255);
+}
+
+@media only screen and (max-width: 560px) {
+  .container, .backdrop, textarea {
+    width: 92%;
+  }
+
+  .container h4 {
+    text-align: left;
+  }
+}

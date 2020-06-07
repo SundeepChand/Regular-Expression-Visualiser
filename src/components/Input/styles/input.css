@@ -1,0 +1,61 @@
+.input-container {
+  width: 100%;
+  height: 100px;
+  padding: 20px 40px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding-left: 0px;
+}
+
+.input-container h4 {
+  padding-top: 5px;
+}
+
+.input-container input {
+  width: 70%;
+  height: 35px;
+  padding: 5px;
+  color: gray;
+  margin-left: 20px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.input-container input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(80, 255, 203);
+  border: 1px solid rgb(0, 183, 255);
+}
+
+.header-div {
+  width: 30%;
+  text-align: right;
+}
+
+.input-form-div {
+  width: 70%;
+  text-align: left;
+}
+
+@media only screen and (max-width: 560px) {
+  .input-container {
+    padding-right: 0px;
+    flex-wrap: wrap;
+  }
+
+  .input-container > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .input-container .header-div {
+    text-align: left;
+    padding-left: 5vw;
+  }
+
+  .input-container input {
+    width: 90%;
+    margin: 0px;
+  }
+}
